@@ -1,0 +1,71 @@
+/* Ensure header/footer display normally */
+header, footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+/* GAME CONTAINER */
+.game-container{
+    position: relative;
+    width: 100%;
+    height: 70vh; /* fit inside page without covering header/footer */
+    overflow: hidden;
+    margin: 20px auto; /* optional spacing */
+}
+
+/* BACKGROUND */
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("pictures/gamesbackground.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* BIRD */
+.hironobird{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 8vw;
+    max-width: 130px;
+    z-index: 100;
+}
+
+/* PIPES */
+.pipe_sprite{
+    position: absolute;
+    left: 100%;
+    background: radial-gradient(lightgreen,green);
+    border: 5px solid black;
+}
+
+/* MESSAGE */
+.message{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    font-size: 2vw;
+    color: black;
+    z-index:10;
+}
+
+/* SCORE */
+.score{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 5vh;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    z-index: 20;
+}
+
+.score_val{
+    color: gold;
+    font-weight: bold;
+}
